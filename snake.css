@@ -1,0 +1,60 @@
+ html { overflow:  hidden; }
+
+body{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	min-height:100vh;
+}
+.field{
+	border:solid orange 25px;
+	background-image:url('img/ground-3.jpg');
+	position:relative;
+	margin:auto;
+	z-index:1;
+}
+.cell{
+	width:24px;
+	height:24px;
+	position:absolute;
+	left:0;
+	top:0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	font-size:12px;
+	z-index:1;
+}
+.snake{
+	width:100%;
+	height:100%;
+	margin:auto;
+	border-radius:25%;
+	background-color:orange;
+	box-shadow: -2px 5px 27px -7px rgba(0,0,0,0.59);
+	-webkit-box-shadow: -2px 5px 27px -7px rgba(0,0,0,0.59);
+	-moz-box-shadow: -2px 5px 27px -7px rgba(0,0,0,0.59);
+}
+.snake:before{
+	content:"";
+	display:block;
+	width:8px;
+	height:8px;
+	position:relative;
+	top:4px;
+	left:4px;
+	border-radius:50%;
+	background-color:white;
+}
+.food{
+	width:100%;
+	height:100%;
+	background-image:url('img/apple.png');
+	background-position:center center;
+	background-size:contain;
+}
+
+
+
+
